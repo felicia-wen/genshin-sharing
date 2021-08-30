@@ -1,5 +1,5 @@
 from config import Config
-import time,os
+import time
 import telepot
 from telepot.loop import MessageLoop
 from config import config

@@ -110,6 +110,7 @@ class Config(object):
         self.TENANT_ID = self.get_config('TENANT_ID')
         self.CLIENT_ID = self.get_config('CLIENT_ID')
         self.CLIENT_SECRET = self.get_config('CLIENT_SECRET')
+        self.USER_ID = self.get_config('USER_ID')
 
     def get_config(self, name: str):
         value = os.environ[name] if os.environ.get(name) else self.config_json.get(name, '')
