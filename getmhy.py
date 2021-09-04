@@ -2,7 +2,7 @@ import requests
 import msal
 import json
 import time
-from config import config
+from .config import config
 def run():
     def acquire_token():
         """

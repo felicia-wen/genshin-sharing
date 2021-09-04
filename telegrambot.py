@@ -1,4 +1,4 @@
-from config import config
+from .config import config
 
 class TelegramBot():
     def __init__(self):

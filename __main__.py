@@ -1,8 +1,8 @@
-from config import Config
 import time
+import logging
 import telepot
 from telepot.loop import MessageLoop
-from config import config
+from .config import config
 import getmhy
 def handle(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
@@ -13,9 +13,10 @@ def handle(msg):
             getmhy.run()
 TOKEN = config.TG_BOT_TOKEN
 bot = telepot.Bot(TOKEN)
-MessageLoop(bot, handle).run_as_thread()
+loop=MessageLoop(bot, handle).run_as_thread()
 print ('Listening ...')
-
+logging.basicConfig(filename='debug.log', filemode='w', format='%(asctime)s:%(levelname)s:%(message)s', level=logging.DEBUG, datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.debug(loop)
 # Keep the program running.
 while 1:
     time.sleep(10)

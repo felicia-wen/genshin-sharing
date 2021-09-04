@@ -11,6 +11,5 @@ Join the telegram group below, let’s see who end this game.
 1. The email is read using Microsoft Graph API,  
 2. fill config/config.json,  
 3. make sure you have installed `requests`,`msal` and `telepot`.
-4. run telegramloop.py to deploy.
 ## Credit
 ### the config.py and telegrambot.py are based on [genshinhelper](https://github.com/y1ndan/genshinhelper).
