@@ -3,14 +3,14 @@ import logging
 import telepot
 from telepot.loop import MessageLoop
 from .config import config
-import getmhy
+from . import getmhy
 def handle(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
     print(content_type, chat_type, chat_id)
     if content_type == 'text':
         if msg['text'] == '/verify':
             print ("verifying.")
-            getmhy.run()
+            getmhy.Run()
 TOKEN = config.TG_BOT_TOKEN
 bot = telepot.Bot(TOKEN)
 loop=MessageLoop(bot, handle).run_as_thread()

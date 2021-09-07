@@ -3,7 +3,7 @@ import msal
 import json
 import time
 from .config import config
-def run():
+def Run():
     def acquire_token():
         """
         Acquire token via MSAL
