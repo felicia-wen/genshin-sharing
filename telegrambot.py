@@ -1,5 +1,4 @@
 from .config import config
-
 class TelegramBot():
     def __init__(self):
         self.name = 'Telegram Bot'
