@@ -1,6 +1,6 @@
 # Let's play a game together.
 ```
-I'm a shared account from Genshin Aisa Server.
+I'm a shared account from Genshin Asia Server.
 
 Enter the command to get the verification code,
 
